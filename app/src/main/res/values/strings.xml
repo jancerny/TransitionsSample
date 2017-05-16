@@ -1,0 +1,26 @@
+<resources>
+	<string name="app_name">TransitionsSample</string>
+
+	<string name="list_photo_transition_name">list_photo_%d</string>
+	<string name="detail_photo_transition_name">detail_photo_%d</string>
+
+
+	<string name="simple">Simple Transitions</string>
+	<string name="scene">Using Scenes</string>
+	<string name="recolor">Recolor</string>
+	<string name="all_together">Shared Element Activity Transition</string>
+
+	<string name="created_at">Time of upload</string>
+	<string name="rating">Rating</string>
+	<string name="highest_rating">Highest historical rating</string>
+	<string name="times_viewed">Views</string>
+	<string name="votes_count">Votes count</string>
+	<string name="comments_count">Most commented</string>
+	<string name="taken_at">Time of taken</string>
+
+	<string name="asc">Ascending</string>
+	<string name="desc">Descending</string>
+
+	<string name="filters">Filters</string>
+
+</resources>

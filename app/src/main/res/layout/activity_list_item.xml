@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<data>
+		<variable
+			name="activity" type="com.strv.transitionssample.ui.list.ListActivity"/>
+		<variable
+			name="item" type="com.strv.transitionssample.data.model.Photo" />
+		<variable
+			name="viewModel" type="com.strv.transitionssample.ui.list.ListViewModel" />
+	</data>
+
+	<com.strv.transitionssample.ui.widget.SquareImageView
+		android:id="@+id/image"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="@{(view) -> activity.onItemClick(view, item)}"
+		android:transitionName="@{@string/list_photo_transition_name(item.id)}"
+		android:scaleType="centerCrop"
+		app:loadUrl="@{item.image_url}"
+		app:placeholder="@{@drawable/placeholder_square}"/>
+</layout>
